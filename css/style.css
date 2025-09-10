@@ -1,4 +1,41 @@
-img{
-    height: 15;
-    width: 15;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar{
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    background: rgb(39, 192, 212);
+    gap: 50px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'robotolight';
+    font-weight: bold;
+    font-size: 15px;
+}
+
